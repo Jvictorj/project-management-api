@@ -52,6 +52,4 @@ public class ProjetoService {
         projetoRepository.deleteById(id);
     }
 
-    //test main commmit
-
 }
