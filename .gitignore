@@ -35,3 +35,6 @@ build/
 .env
 
 data/
+
+Dockerfile.local
+*.local
