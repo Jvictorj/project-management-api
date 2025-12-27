@@ -1,5 +1,9 @@
-package dev.java10x.GestaoDeProjetos.Projetos;
+package dev.java10x.GestaoDeProjetos.service;
 
+import dev.java10x.GestaoDeProjetos.model.ProjetosModel;
+import dev.java10x.GestaoDeProjetos.dto.ProjetoDTO;
+import dev.java10x.GestaoDeProjetos.mapper.ProjetoMapper;
+import dev.java10x.GestaoDeProjetos.repository.ProjetoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +16,7 @@ public class ProjetoService {
 
     private ProjetoRepository projetoRepository;
 
-    private  ProjetoMapper projetoMapper;
+    private ProjetoMapper projetoMapper;
 
     public ProjetoService(ProjetoRepository projetoRepository, ProjetoMapper projetoMapper) {
         this.projetoRepository = projetoRepository;

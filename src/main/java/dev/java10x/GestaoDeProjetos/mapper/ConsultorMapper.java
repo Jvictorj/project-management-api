@@ -1,4 +1,4 @@
-package dev.java10x.GestaoDeProjetos.Consultor;
+package dev.java10x.GestaoDeProjetos.mapper;
 
 import dev.java10x.GestaoDeProjetos.dto.ConsultorDTO;
 import dev.java10x.GestaoDeProjetos.model.ConsultorModel;

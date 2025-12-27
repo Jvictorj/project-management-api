@@ -1,5 +1,7 @@
-package dev.java10x.GestaoDeProjetos.Projetos;
+package dev.java10x.GestaoDeProjetos.mapper;
 
+import dev.java10x.GestaoDeProjetos.model.ProjetosModel;
+import dev.java10x.GestaoDeProjetos.dto.ProjetoDTO;
 import org.springframework.stereotype.Component;
 
 @Component

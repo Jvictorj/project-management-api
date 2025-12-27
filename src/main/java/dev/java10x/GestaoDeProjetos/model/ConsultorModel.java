@@ -1,6 +1,6 @@
-package dev.java10x.GestaoDeProjetos.Consultor;
+package dev.java10x.GestaoDeProjetos.model;
 
-import dev.java10x.GestaoDeProjetos.Projetos.ProjetosModel;
+import dev.java10x.GestaoDeProjetos.model.enums.CargoDoConsultor;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -34,7 +34,6 @@ public class ConsultorModel {
     @Column(name = "frase")
     private String frase;
 
-    //Varios consultores podem ter um mesmo projeto
     @ManyToOne
     @JoinColumn(name = "projetos_id") //chave estrangeira
     private ProjetosModel projetos;

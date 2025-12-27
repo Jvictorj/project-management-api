@@ -1,5 +1,9 @@
-package dev.java10x.GestaoDeProjetos.Consultor;
+package dev.java10x.GestaoDeProjetos.service;
 
+import dev.java10x.GestaoDeProjetos.mapper.ConsultorMapper;
+import dev.java10x.GestaoDeProjetos.dto.ConsultorDTO;
+import dev.java10x.GestaoDeProjetos.model.ConsultorModel;
+import dev.java10x.GestaoDeProjetos.repository.ConsultorRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +16,7 @@ public class ConsultorService {
 
     //Injeção de dependencia para dar ao service acesso ao repository
     private ConsultorRepository consultorRepository;
-    private  ConsultorMapper consultorMapper;
+    private ConsultorMapper consultorMapper;
 
     public ConsultorService(ConsultorRepository consultorRepository, ConsultorMapper consultorMapper) {
         this.consultorRepository = consultorRepository;

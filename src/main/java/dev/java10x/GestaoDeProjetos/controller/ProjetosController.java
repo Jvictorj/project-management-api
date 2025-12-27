@@ -1,5 +1,7 @@
-package dev.java10x.GestaoDeProjetos.Projetos;
+package dev.java10x.GestaoDeProjetos.controller;
 
+import dev.java10x.GestaoDeProjetos.service.ProjetoService;
+import dev.java10x.GestaoDeProjetos.dto.ProjetoDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

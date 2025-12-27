@@ -1,6 +1,7 @@
-package dev.java10x.GestaoDeProjetos.Consultor;
+package dev.java10x.GestaoDeProjetos.dto;
 
-import dev.java10x.GestaoDeProjetos.Projetos.ProjetosModel;
+import dev.java10x.GestaoDeProjetos.model.enums.CargoDoConsultor;
+import dev.java10x.GestaoDeProjetos.model.ProjetosModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,5 +1,7 @@
-package dev.java10x.GestaoDeProjetos.Consultor;
+package dev.java10x.GestaoDeProjetos.controller;
 
+import dev.java10x.GestaoDeProjetos.service.ConsultorService;
+import dev.java10x.GestaoDeProjetos.dto.ConsultorDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -37,7 +39,7 @@ public class ConsultorController {
             return ResponseEntity.ok(listarConsultor);
         }   else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body("Consultor com ID: " + id + " não encontrado");
+                    .body("mapper com ID: " + id + " não encontrado");
         }
     }
 
@@ -48,7 +50,7 @@ public class ConsultorController {
             return ResponseEntity.ok(alterarConsultor);
         }   else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body("Consultor com ID: " + id + " Não encontrado");
+                    .body("mapper com ID: " + id + " Não encontrado");
         }
 
     }
@@ -57,10 +59,10 @@ public class ConsultorController {
     public ResponseEntity deletarConsulorPorId (@PathVariable Long id) {
         if (consultorService.listarConsultorPorId(id) != null) {
             consultorService.deletarConsultorPorId(id);
-            return ResponseEntity.ok("Consultor de ID: " + id + "Foi deletado com sucesso");
+            return ResponseEntity.ok("mapper de ID: " + id + "Foi deletado com sucesso");
         }   else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body("Consultor com ID: " + id + " Não encontrado");
+                    .body("mapper com ID: " + id + " Não encontrado");
         }
     }
 

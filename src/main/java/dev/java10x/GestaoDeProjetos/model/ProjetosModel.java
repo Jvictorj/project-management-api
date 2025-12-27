@@ -1,7 +1,7 @@
-package dev.java10x.GestaoDeProjetos.Projetos;
+package dev.java10x.GestaoDeProjetos.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import dev.java10x.GestaoDeProjetos.model.ConsultorModel;
+import dev.java10x.GestaoDeProjetos.model.enums.StatusDoProjeto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
