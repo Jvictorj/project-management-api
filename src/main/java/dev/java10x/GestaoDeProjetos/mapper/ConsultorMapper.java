@@ -1,5 +1,7 @@
 package dev.java10x.GestaoDeProjetos.Consultor;
 
+import dev.java10x.GestaoDeProjetos.dto.ConsultorDTO;
+import dev.java10x.GestaoDeProjetos.model.ConsultorModel;
 import org.springframework.stereotype.Component;
 
 @Component

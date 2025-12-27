@@ -1,6 +1,6 @@
 package dev.java10x.GestaoDeProjetos.Projetos;
 
-import dev.java10x.GestaoDeProjetos.Consultor.ConsultorModel;
+import dev.java10x.GestaoDeProjetos.model.ConsultorModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
